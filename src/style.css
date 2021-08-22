@@ -1,0 +1,78 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+}
+#content{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#backgroundImage{
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-image: url("../src/girlpizza.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+}
+.homeHeader{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 47px;
+    margin-top: 40px;
+}
+p{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 15px;
+    text-align: justify;
+    padding: 30px;
+}
+
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background:
+        /* top, transparent black, faked with gradient */ 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7), 
+            rgba(0, 0, 0, 0.7)
+        ),
+        /* bottom, image */
+        url("../src/pizzamenu.jpg");    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+}
+.pizzaContainer{
+    margin-top: 20px;
+    width: 80%;
+    height: 30%;
+    border: 1px solid white;
+}
+#pizzaImg{
+    width: 130px;
+    height: 110px;
+}
+#pizzaTitle{
+    color: white;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+}
+#pizzaText{
+}

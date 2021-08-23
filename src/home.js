@@ -1,4 +1,3 @@
-
 export function displayHome() {
     const content = document.querySelector("#content");
 

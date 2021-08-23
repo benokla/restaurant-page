@@ -95,13 +95,22 @@ p{
     position: absolute;
     top: 0px;
 }
-ul {
+#nav {
     display: flex;
-    background-color: rgb(236, 163, 53);
+    background-color: rgb(245, 211, 160);
     width: 100vw;
     list-style: none;
     position: fixed;
+    top: 0px;
     color: rgb(0, 0, 0);
     justify-content: space-evenly;
     z-index: 2;
+}
+li{
+    cursor: pointer;
+    font-family: sans-serif;
+    padding: 5px;
+}
+li:hover{
+    color: white;
 }

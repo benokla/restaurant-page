@@ -1,3 +1,4 @@
+// Where all pizzas are stored
 let menu = [];
 
 export function displayMenu() {
@@ -29,10 +30,11 @@ function createMenu() {
 }
 
 export function showMenu() {
+    // Insert pizzas into menu array
     createMenu();
     menu.forEach(pizza => {
-        console.log(pizza)
-        const menuWrapper = document.querySelector(".menuWrapper")
+        const menuWrapper = document.querySelector(".menuWrapper");
+
         const pizzaContainer = document.createElement("div");
         pizzaContainer.classList.add("pizzaContainer");
 
@@ -55,6 +57,5 @@ export function showMenu() {
     });
 }
 
-export {menu}
 
 

@@ -1,6 +1,10 @@
+
 export function displayHome() {
     const content = document.querySelector("#content");
-    
+
+    const homeWrapper = document.createElement("div");
+    homeWrapper.classList.add(".homeWrapper")
+
     const h1 = document.createElement("h1");
     h1.textContent = "Pizza Knote";
     h1.classList.add("homeHeader")
@@ -11,7 +15,10 @@ export function displayHome() {
     const img = document.createElement("div");
     img.setAttribute("id", "backgroundImage");
 
-    content.appendChild(h1)
-    content.appendChild(p1)
-    content.appendChild(img)
+    homeWrapper.appendChild(h1)
+    homeWrapper.appendChild(p1)
+    homeWrapper.appendChild(img)
+    content.appendChild(homeWrapper)
 }
+
+
